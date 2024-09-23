@@ -1,23 +1,22 @@
-# projeto-CPTM-plus
+# [Grupo 1] Projeto-CPTM-plus
 
 - [Link dos slides](https://docs.google.com/presentation/d/1WhcmPL6o3zCwUjxxyQNF7d44-AmTVTR8ej00qzn1UnQ/edit?usp=sharing)
 - [Modelo de registro de Dailies](https://docs.google.com/document/d/1sg9-XnS0XWlmYKIeP0JerL6xg7LS9sgfdZZyv98aP5c/edit?usp=sharing)
 
 ## Integrantes
 
-- Pessoa 1: Scrum Master
-- Pessoa 2: Desenvolvimento
-- Pessoa 3: Desenvolvimento
-- Pessoa 4: Desenvolvimento
-- Pessoa 5: Desenvolvimento
+- Vitor Neves: Scrum Master & Desenvolvimento
+- Gabriel Borem: Desenvolvimento
+- João Pedro Castro: Desenvolvimento
+- Tulio Castro: Desenvolvimento
 
-# 1. Nome do Projeto: IbmecFood
+# 1. Nome do Projeto: CPTM+
 
-Um aplicativo de gestão de pedidos em restaurantes.
+Um aplicativo de melhoria da experiência do usuário no transporte ferroviário da CPTM.
 
 ## 2. Apresentação do Projeto
 
-Este projeto é um sistema para automatizar a gestão de pedidos em restaurantes. Ele permite que os garçons enviem pedidos diretamente para a cozinha e o caixa, gerando relatórios em tempo real. O projeto foi pensado para pequenos e médios estabelecimentos que buscam maior agilidade no atendimento e controle sobre o fluxo de pedidos.
+O projeto CPTM+ visa melhorar a acessibilidade e o design do aplicativo oficial da CPTM, proporcionando uma experiência mais intuitiva e eficiente para os usuários do transporte público. O novo design tem como objetivo facilitar a navegação, tornando mais simples o acesso a informações como horários, itinerários e notificações em tempo real sobre o serviço. Essa melhoria é voltada para todos os usuários do transporte, oferecendo uma interface mais moderna e direcionada.
 
 ## 3. Gestão de Código
 
