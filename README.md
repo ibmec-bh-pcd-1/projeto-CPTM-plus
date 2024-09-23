@@ -1,4 +1,4 @@
-# [Grupo 1] rojeto-CPTM-plus
+# [Grupo 1] Projeto-CPTM-plus
 
 - [Link dos slides](https://docs.google.com/presentation/d/1WhcmPL6o3zCwUjxxyQNF7d44-AmTVTR8ej00qzn1UnQ/edit?usp=sharing)
 - [Modelo de registro de Dailies](https://docs.google.com/document/d/1sg9-XnS0XWlmYKIeP0JerL6xg7LS9sgfdZZyv98aP5c/edit?usp=sharing)
