@@ -1,3 +1,73 @@
+@media screen and (max-width: 430px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    body{
+        background-color: #F2F0F5;
+    }
+    
+    .duascores{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .vermelha{
+        background-color:#EE3338;
+        display: flex;
+        width: 100%;
+        height: 60vb;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .opacidade{
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 270px;
+        height: 400px;
+        background-color: #F2F0F5;
+        opacity: 0.8;
+        z-index: 2;
+        border-radius: 20px;
+    }
+    
+    .branca{
+        width: 100%;
+        height: 45vb;
+        background-color: #F2F0F5;
+        border-radius: 0px;
+        position: relative;
+        bottom: 0px;
+        z-index: 0;
+        display: flex;
+    
+    }
+    
+    img{
+        width: 30%;
+        margin-bottom: 320px;
+    }
+    
+    .imagemtrem{
+        position: absolute; 
+        z-index: 3;
+    }
+    
+    .tremcptm{
+        width: 45vh;
+        height: 25vb;
+        margin-top: 80px;
+        transform: scale(1.5);
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -26,7 +96,7 @@ body{
 
 .opacidade{
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 270px;
@@ -39,7 +109,7 @@ body{
 
 .branca{
     width: 100%;
-    height: 45vb;
+    height: 40vb;
     background-color: #F2F0F5;
     border-radius: 0px;
     position: relative;
@@ -50,16 +120,18 @@ body{
 }
 
 img{
-    width: 35%;
-    margin-bottom: 280px;
+    width: 30%;
+    margin-bottom: 320px;
+}
+
+.imagemtrem{
+    position: absolute; 
+    z-index: 3;
 }
 
 .tremcptm{
-    width: 45vh;
+    width: 95%;
     height: 25vb;
     margin-top: 80px;
     transform: scale(1.5);
-    position: fixed;
-    z-index: 999;
-    object-fit: contain;
 }
