@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+  }
+
 html, body {
     height: 100%;
     display: flex;
@@ -22,6 +27,10 @@ header {
     justify-content: space-between;
 }
 
+header p {
+    font-family: Inter;
+}
+
 .profile{
     display: flex;
     align-items: center;
@@ -33,14 +42,70 @@ header {
 }
 
 nav{
+    padding-top: 2vh;
+    padding-left: 3vh;
+    padding-bottom: 2vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
 }
 
+nav .selected{
+    background-color: white;
+    border-radius: 30px;
+}
+
+
 nav p {
     color: white;
-    padding: 1vw;
+    margin: 2vw;
     font-size: x-large;
-    font-family: "Inter";
+    font-family: Inter;
+}
+
+nav .selected p{
+    color: #EE3338;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainText p{
+    color: white;
+    font-family: Inter;
+    padding-left: 3vh;
+    padding-top: 1vh;
+}
+
+section{
+    height: 20vh;
+    margin: 5vw;
+    background-color: #968D89;
+    border-radius: 30px;
+}
+
+section principal{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section principal saldo{
+    display: flex;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    color: white;
+}
+
+section rodape {
+    display: flex;
+    position: fixed;
+    background-color: #696462;
+    width: 100%;
 }
