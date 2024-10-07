@@ -60,7 +60,6 @@ nav{
 nav .selected{
     background-color: white;
     border-radius: 20px;
-    margin-left: 8vw;
 }
 
 
@@ -89,43 +88,44 @@ nav .selected p{
 
 section{
     height: 20vh;
+    margin: 5vw;
+    background-color: #968D89;
     border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 section principal{
+    padding-top: 2vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-right: 5vw;
+    padding-bottom: 30px;
 }
 
-section principal img{
-    height: 17vh;
-}
-
-
-
-section saldo{
-    
-    background-color: #696462;
+section principal saldo{
     display: flex;
     align-items: end;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     font-family: Inter;
     color: white;
-    height: 17vh;
-    width: 24vw;
-    border-radius: 20px;
 }
 
+section rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #696462;
+    width: 90vw;
+    height: 4vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+section rodape p {
+    font-family: Inter;
+    padding-left: 2vw;
+}
 
 main{
     display: flex;

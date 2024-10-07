@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/qrCode.css">
 </head>
 <body>
     <header>
@@ -19,16 +19,16 @@
     </header>
     
     <nav>
-        <div class="selected">
-            <p>
+        <a href="index.html">
+            <p style="padding-left: 3vh; padding-right: 3vh;">
                 <b>Cartões</b>
             </p>
-        </div>
-            <a href="qrCode.html">
-            <p style="padding-left: 3vh;">
+        </a>
+        <div class="selected">
+            <p>
                 <b>QR Codes</b>
             </p>
-        </a>
+        </div>
     </nav>
 
     <div class="mainText">
@@ -47,16 +47,23 @@
 
     <section>
         <principal>
-            <img src="../../assets/icons/bilhete.png" alt="">
+            <img src="../../assets/icons/Qr_Code.png" alt="" style="width: 100px; height: 100px;">
+
+            <saldo>
+                <p>
+                    <b style="font-size: larger;">Saldo:</b>
+                </p>
+                <p>
+                    <b style="font-size: xx-large;">R$20,00</b>
+                </p>
+            </saldo>
         </principal>
-        <saldo>
-            <img src="../../assets/icons/switch.png" alt="" style="height: 4vh;">
+        
+        <rodape>
             <p>
-                <b>
-                    Trocar <br> Cartão
-                </b>
+                <b>Gerar QR Code</b>
             </p>
-        </saldo>
+        </rodape>
     </section>
 
     <main>
