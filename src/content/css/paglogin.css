@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F0F5;
+    font-family: Arial, sans-serif;
+}
+
+.duascores {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.vermelha {
+    background-color: #EE3338;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logocptm{
+    margin-bottom: 65%;
+}
+
+.opacidade {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(242, 240, 245, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1; 
+    height: 40%;
+}
+
+.branca {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2; 
+}
+
+img {
+    width: 30%;
+}
+
+
+.tremcptm {
+    width: 140%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    margin-right: 30%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+
+
+
+
+
+
+button:hover {
+    background-color: #cc292e;
+}
