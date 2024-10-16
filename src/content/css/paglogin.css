@@ -99,14 +99,20 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #EE3338;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
+
+
+
+
+
+
 
 button:hover {
     background-color: #cc292e;
