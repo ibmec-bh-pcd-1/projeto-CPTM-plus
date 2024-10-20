@@ -1,150 +1,73 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a{
-    text-decoration: none;
-}
-
 @font-face {
     font-family: Inter;
     src: url(../../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-html, body {
-    height: 100%;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    background-image: url(../../assets/img/background.png);
-    background-size: cover;
+    height: 100vh;
+    background-color: #F6F6F6;
 }
 
 
-header { 
-    margin-top: 5vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    justify-content: space-between;
-}
-
-header p {
-    font-family: Inter;
-}
-
-.profile{
-    display: flex;
-    align-items: center;
-}
-
-.profile p {
-    color: white;
-    padding-right: 3vw;
-}
-
-nav{
-    padding-top: 2vh;
-    padding-left: 3vh;
-    padding-bottom: 2vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-}
-
-nav .selected{
-    background-color: white;
-    border-radius: 20px;
-    margin-left: 8vw;
+a {
+    text-decoration: none;
 }
 
 
-nav p {
-    color: white;
-    margin: 2vw;
-    font-size: x-large;
-    font-family: Inter;
-}
-
-nav .selected p{
-    color: #EE3338;
-}
-
-.mainText {
-    display: flex;
-    flex-direction: column;
-}
-
-.mainText p{
-    color: white;
-    font-family: Inter;
-    padding-left: 3vh;
-    padding-top: 1vh;
-}
-
-section{
-    height: 20vh;
-    border-radius: 20px;
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 20%;
 }
 
-section principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding-right: 5vw;
-}
-
-section principal img{
-    height: 17vh;
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    height: 5%; 
 }
 
 
-
-section saldo{
-    
-    background-color: #696462;
-    display: flex;
-    align-items: end;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: Inter;
+.overlay {
+    position: relative;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; 
+    height: 15%; 
+    background-color: #424242; 
     color: white;
-    height: 17vh;
-    width: 24vw;
-    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+    border-radius: 20px; 
+    margin-top: -15%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
+.overlay .pesquisa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+}
 
-main{
+main {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-
-main p{
-    font-family: Inter;
-    color: #EE3338;
-    font-size: medium;
-    align-items: center;
-}
-
-main img{
-    height: 5vh;
-    padding-bottom: 1vh;
-}
 
 main principal {
     display: flex;
@@ -153,7 +76,7 @@ main principal {
 }
 
 main principal div { 
-    background-color: white;
+    background-color: #3395EE;
     width: 40vw;
     height: 10vh;
     display: flex;
@@ -161,6 +84,11 @@ main principal div {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+main img {
+    height: 70%;
 }
 
 main secundario {
@@ -171,7 +99,7 @@ main secundario {
 }
 
 main secundario div { 
-    background-color: white;
+    background-color: #a468e9;
     width: 25vw;
     height: 10vh;
     display: flex;
@@ -179,4 +107,7 @@ main secundario div {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
+
+

@@ -3,96 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Login</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+
+
 <body>
     <header>
-        <img src="../../assets/img/cptmLogoRed.png" alt="" style="width: 70px;">
-        <div class="profile">
-            <p>
-                <b>Túlio</b>
-            </p>
-            <img src="../../assets/icons/user-circle.png" style="height: 25px;" alt="">
-        </div>
-        
+        <img src="../../assets/img/cptm.svg" alt="">
     </header>
     
-    <nav>
-        <div class="selected">
+    <container>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15004.178001252154!2d-43.93533439999999!3d-19.922529499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1728959848604!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="400" 
+            style="border-radius:15px;margin-top: 5%;align-items: center;justify-content: center;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="overlay">  
+            <img src="../../assets/icons/search.svg" alt="" style="padding-right: 10%;">
             <p>
-                <b>Cartões</b>
+                <b>Me leve a algum lugar</b>
             </p>
         </div>
-            <a href="qrCode.html">
-            <p style="padding-left: 3vh;">
-                <b>QR Codes</b>
-            </p>
-        </a>
-    </nav>
-
-    <div class="mainText">
-        <p style="font-size: xx-large;">
-            <b>
-                Meus QR Codes
-            </b>
-        </p>
-
-        <p style="font-size: larger;">
-            <b>
-                Veja seus QR Codes, recarregue e mais
-            </b>
-        </p>
-    </div>
-
-    <section>
-        <principal>
-            <img src="../../assets/icons/bilhete.png" alt="">
-        </principal>
-        <saldo>
-            <img src="../../assets/icons/switch.png" alt="" style="height: 4vh;">
-            <p>
-                <b>
-                    Trocar <br> Cartão
-                </b>
-            </p>
-        </saldo>
-    </section>
-
+        
     <main>
         <principal>
+            <a href="saldo.html">
+                <div>
+                    <img src="../../assets/icons/money.svg" alt="">
+                </div>
+            </a>
             <div>
-                <img src="../../assets/icons/money.png" alt="">
-                <p>
-                    <b>Recarregar</b>
-                </p>
-            </div>
-            <div>
-                <img src="../../assets/icons/routes.png" alt="">
-                <p>
-                    <b>Rotas</b>
-                </p>
+                <img src="../../assets/icons/extrato.svg" alt="" >
             </div>
         </principal>
         <secundario>
             <div>
-                <img src="../../assets/icons/star.png" alt="">
-                <p>
-                    <b>Favoritos</b>
-                </p>
+                <img src="../../assets/icons/ticket.svg" alt="">
             </div>
             <div>
-                <img src="../../assets/icons/extrato.png" alt="">
-                <p>
-                    <b>Extato</b>
-                </p>
+                <img src="../../assets/icons/status.svg" alt="">
             </div>
-            <div>
-                <img src="../../assets/icons/gear.png" alt="">
-                <p>
-                    <b>Ajustes</b>
-                </p>
-            </div>
+            <a href="conta.html">
+                <div>
+                    <img src="../../assets/icons/CONTA.svg" alt="">
+                </div>
+            </a>
         </secundario>
     </main>
 </body>
