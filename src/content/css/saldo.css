@@ -1,108 +1,85 @@
-@font-face {
-    font-family: Inter;
-    src: url(../../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
-}
-
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Inter;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #F6F6F6;
+    background-color: #f5f5f5;
 }
 
-.home {
-    display: flex;
-    justify-content: left;
-    padding-left: 5%;
-    padding-top: 5%;
+img{
+    width: 30%;
 }
 
-
-a {
-    text-decoration: none;
+.container-saldo {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20%;
+.logo-container {
+    margin-top: 20px;
 }
 
-
-nav {
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-    font-size: x-large;
+.saldo-section {
     background-color: white;
-    margin-top: 10%;
-    border-radius: 20px;
-    width: 85%;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-    margin-right: auto;
-    margin-left: auto;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav p {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: 2%;
+.saldo-section p {
+    font-size: 18px;
+    color: #333;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-    font-size: x-large;
+.saldo-section h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.pix-section {
     background-color: white;
-    margin-top: 5%;
-    border-radius: 20px;
-    width: 85%;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-    margin-right: auto;
-    margin-left: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-main .pix {
-    display: flex;
-    justify-content: space-around;
-    padding: 5%;
+.pix-container {
+    text-align: left;
+    padding: 10px;
 }
 
-main .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 8%;
+.pix-container p {
+    font-size: 18px;
+    color: #333;
 }
 
-main .text p{
-    margin: 2%;
-    font-size: large;
+.pix-container span {
+    font-size: 14px;
+    color: #888;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-    font-size: x-large;
-    background-color: white;
-    margin-top: 5%;
-    border-radius: 20px;
-    width: 85%;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-    margin-right: auto;
-    margin-left: auto;
+.btn-cadastrar-cartao {
+    background-color: #EE3338;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
-.card img {
-    padding: 5%;
+.btn-voltar {
+    background-color: #716061;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
-
-

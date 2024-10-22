@@ -1,51 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="../css/saldo.css">
+    <title>Página de Saldo</title>
+    <link rel="stylesheet" href="..//css/saldo.css">
 </head>
-
-
 <body>
-    <header>
-        <img src="../../assets/img/cptm.svg" alt="">
-    </header>
-    
-    <div class="home">
-        <a href="index.html">
-            <img src="../../assets/icons/back.svg" alt="">
-        </a>
-    </div>
-    
-    <nav>
-        <p style="display: flex; justify-content: left;">
-            <b>Seu saldo:</b>
-        </p>
-        <p style="display: flex; justify-content: right; font-size: 200%;">
-            <b>R$20,00</b>
-        </p>
-    </nav>
-
-    <main>
-        <div class="pix">
-            <img src="../../assets/icons/pix.svg">
+    <div class="container-saldo">
+        <div class="logo-container">
+            <img class="logocptm" src="../../assets/img/cptmLogoRed.png" alt="Logo CPTM">
         </div>
 
-        <div class="text">
-            <p>
-                <b>Valor mínimo: R$10,00</b>
-            </p>
-
-            <p>
-                <b>Valor maximo: R$650,00</b>
-            </p>
+        <div class="saldo-section">
+            <p>Seu saldo:</p>
+            <h1>R$20,00</h1>
         </div>
-    </main>
 
-    <div class="card">
-        <img src="../../assets/icons/newCard.svg" alt="">
+        <div class="pix-section">
+            <div class="pix-container">
+                <p>PIX</p>
+                <span>Valor mínimo: R$10,00<br>Valor máximo: R$650,00</span>
+            </div>
+        </div>
+
+        <!-- Botão de cadastrar novo cartão -->
+        <button class="btn-cadastrar-cartao">Cadastrar novo cartão</button>
+
+        <button class="btn-voltar" onclick="window.location.href='index.html'">Voltar</button>
     </div>
 </body>
 </html>
