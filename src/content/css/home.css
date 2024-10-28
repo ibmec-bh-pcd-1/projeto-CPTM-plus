@@ -22,7 +22,6 @@ html, body {
     background-size: cover;
 }
 
-
 header { 
     margin-top: 5vh;
     padding-left: 5vw;
@@ -62,7 +61,6 @@ nav .selected{
     border-radius: 20px;
     margin-left: 8vw;
 }
-
 
 nav p {
     color: white;
@@ -108,10 +106,7 @@ section principal img{
     height: 17vh;
 }
 
-
-
 section saldo{
-    
     background-color: #696462;
     display: flex;
     align-items: end;
@@ -126,13 +121,11 @@ section saldo{
     border-radius: 20px;
 }
 
-
 main{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-
 
 main p{
     font-family: Inter;
@@ -179,4 +172,46 @@ main secundario div {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+}
+
+/* Estilos para o menu do ícone de usuário */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.user-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.user-menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.user-menu-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.user-menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar o menu ao clicar */
+.user-menu.active .user-menu-content {
+    display: block;
 }
