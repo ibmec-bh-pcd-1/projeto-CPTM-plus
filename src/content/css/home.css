@@ -18,7 +18,7 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    background-image: url(../../assets/img/background.png);
+    background-image: url(../../assets/img/background.svg);
     background-size: cover;
 }
 
@@ -133,17 +133,8 @@ main{
     padding: 10px;
 }
 
-
-main p{
-    font-family: Inter;
-    color: #EE3338;
-    font-size: medium;
-    align-items: center;
-}
-
 main img{
-    height: 5vh;
-    padding-bottom: 1vh;
+    height: 70%;
 }
 
 main principal {
@@ -161,6 +152,7 @@ main principal div {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 main secundario {
@@ -179,4 +171,5 @@ main secundario div {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
