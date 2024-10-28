@@ -1,52 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
+    <title>Página da Conta</title>
     <link rel="stylesheet" href="../css/conta.css">
 </head>
-
-
 <body>
-    <header>
-        <img src="../../assets/img/cptm.svg" alt="">
-    </header>
-    
-    <div class="home">
-        <a href="index.html">
-            <img src="../../assets/icons/back.svg" alt="">
-        </a>
-    </div>
+    <div class="container-conta">
+        <!-- Logo CPTM -->
+        <div class="logo-container">
+            <img class="logocptm" src="../../assets/img/cptmLogoRed.png" alt="Logo CPTM">
+        </div>
 
-    <main>
-        <img src="../../assets/icons/noProfilePicture.svg" alt="">
-        <p>
-            <b>
-                Túlio Castro Silva
-            </b>
-        </p>
-        <p class="subInfo">
-            106.000.000-00
-        </p>
-        <p class="subInfo">
-            (21) 9 9879-2085
-        </p>
-        <p class="subInfo">
-            tulio@gmail.com
-        </p>
-    </main>
+        <!-- Informações do usuário -->
+        <div class="user-info">
+            <img src="../../assets/icons/.png" alt="Avatar" class="user-avatar">
+            <h2>Túlio Castro Silva</h2>
+            <p>106.000.000-00</p>
+            <p>(21) 9 9879-2085</p>
+            <p>tulio@gmail.com</p>
+        </div>
 
-    <div class="senha">
-        <img src="../../assets/icons/lock.svg" alt="">
-    </div>
+        <!-- Botões de ação -->
+        <button class="btn-alterar-senha">Alterar sua senha</button>
+        <button class="btn-editar-dados">Edite seus dados</button>
+        <button class="btn-sair">Sair</button>
 
-    <div class="edit">
-        <img src="../../assets/icons/EDIT.svg" alt="">
-    </div>
-
-    <div class="exit">
-        <img src="../../assets/icons/EXIT.svg" alt="">
+        <!-- Voltar ao início -->
+        <button class="btn-voltar" onclick="window.location.href='index.html'">Voltar</button>
     </div>
 </body>
 </html>
