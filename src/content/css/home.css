@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -37,9 +37,10 @@ header p {
     font-family: Inter;
 }
 
-.profile{
+.profile {
     display: flex;
     align-items: center;
+    cursor: pointer; /* Cursor pointer para indicar interatividade */
 }
 
 .profile p {
@@ -47,7 +48,38 @@ header p {
     padding-right: 3vw;
 }
 
-nav{
+.side-menu {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: -200px; /* Começa fora da tela */
+    height: 100%;
+    background: #444;
+    color: white;
+    transition: right 0.3s ease; /* Transição suave */
+    z-index: 1000;
+    padding: 20px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 10px 0;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    text-decoration: underline;
+}
+
+nav {
     padding-top: 2vh;
     padding-left: 3vh;
     padding-bottom: 2vh;
@@ -56,7 +88,7 @@ nav{
     flex-direction: row;
 }
 
-nav .selected{
+nav .selected {
     background-color: white;
     border-radius: 20px;
     margin-left: 8vw;
@@ -69,7 +101,7 @@ nav p {
     font-family: Inter;
 }
 
-nav .selected p{
+nav .selected p {
     color: #EE3338;
 }
 
@@ -78,14 +110,14 @@ nav .selected p{
     flex-direction: column;
 }
 
-.mainText p{
+.mainText p {
     color: white;
     font-family: Inter;
     padding-left: 3vh;
     padding-top: 1vh;
 }
 
-section{
+section {
     height: 20vh;
     border-radius: 20px;
     display: flex;
@@ -94,7 +126,7 @@ section{
     align-items: center;
 }
 
-section principal{
+section principal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,15 +134,14 @@ section principal{
     padding-right: 5vw;
 }
 
-section principal img{
+section principal img {
     height: 17vh;
 }
 
-section saldo{
+section saldo {
     background-color: #696462;
     display: flex;
     align-items: end;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -121,20 +152,20 @@ section saldo{
     border-radius: 20px;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-main p{
+main p {
     font-family: Inter;
     color: #EE3338;
     font-size: medium;
     align-items: center;
 }
 
-main img{
+main img {
     height: 5vh;
     padding-bottom: 1vh;
 }
@@ -172,46 +203,4 @@ main secundario div {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-}
-
-/* Estilos para o menu do ícone de usuário */
-.user-menu {
-    position: relative;
-    display: inline-block;
-}
-
-.user-icon {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 50%;
-    padding: 5px;
-}
-
-.user-menu-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: white;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.user-menu-content a {
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-}
-
-.user-menu-content a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Mostrar o menu ao clicar */
-.user-menu.active .user-menu-content {
-    display: block;
 }

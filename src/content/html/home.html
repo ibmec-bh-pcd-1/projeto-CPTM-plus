@@ -1,97 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CPTM Web App</title>
     <link rel="stylesheet" href="../css/home.css">
-    <style>
-        /* Estilo para o menu do ícone de usuário */
-        .user-menu {
-            position: relative;
-            display: inline-block;
-        }
-
-        .user-icon {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            border-radius: 50%;
-            padding: 5px;
-        }
-
-        .user-menu-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background-color: white;
-            min-width: 120px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .user-menu-content a {
-            color: black;
-            padding: 10px 15px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .user-menu-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Mostrar o menu ao clicar */
-        .user-menu.active .user-menu-content {
-            display: block;
-        }
-    </style>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <img src="../../assets/img/cptmLogoRed.png" alt="" style="width: 70px;">
-        <div class="user-menu">
-            <div class="profile user-icon">
-                <p>
-                    <b>Túlio</b>
-                </p>
-                <img src="../../assets/icons/user-circle.png" style="height: 25px;" alt="">
-            </div>
-            <!-- Menu que aparece ao clicar -->
-            <div class="user-menu-content">
-                <a href="#">Ver Perfil</a>
-                <a href="#">Ajuda</a>
-                <a href="#">Sair</a>
-            </div>
+        <div class="profile" onclick="toggleMenu()">
+            <p><b>Túlio</b></p>
+            <img src="../../assets/icons/user-circle.png" style="height: 25px;" alt="">
         </div>
     </header>
     
+    <nav id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="#" onclick="logout()">Sair da conta</a></li>
+            <li><a href="#" onclick="changeAccount()">Mudar de conta</a></li>
+            <li><a href="#" onclick="accessAccount()">Acessar conta</a></li>
+        </ul>
+    </nav>
+
     <nav>
         <div class="selected">
-            <p>
-                <b>Cartões</b>
-            </p>
+            <p><b>Cartões</b></p>
         </div>
-            <a href="qrCode.html">
-            <p style="padding-left: 3vh;">
-                <b>QR Codes</b>
-            </p>
+        <a href="qrCode.html">
+            <p style="padding-left: 3vh;"><b>QR Codes</b></p>
         </a>
     </nav>
 
     <div class="mainText">
         <p style="font-size: xx-large;">
-            <b>
-                Meus QR Codes
-            </b>
+            <b>Meus QR Codes</b>
         </p>
-
         <p style="font-size: larger;">
-            <b>
-                Veja seus QR Codes, recarregue e mais
-            </b>
+            <b>Veja seus QR Codes, recarregue e mais</b>
         </p>
     </div>
 
@@ -101,11 +48,7 @@
         </principal>
         <saldo>
             <img src="../../assets/icons/switch.png" alt="" style="height: 4vh;">
-            <p>
-                <b>
-                    Trocar <br> Cartão
-                </b>
-            </p>
+            <p><b>Trocar <br> Cartão</b></p>
         </saldo>
     </section>
 
@@ -113,45 +56,28 @@
         <principal>
             <div>
                 <img src="../../assets/icons/money.png" alt="">
-                <p>
-                    <b>Recarregar</b>
-                </p>
+                <p><b>Recarregar</b></p>
             </div>
             <div>
                 <img src="../../assets/icons/routes.png" alt="">
-                <p>
-                    <b>Rotas</b>
-                </p>
+                <p><b>Rotas</b></p>
             </div>
         </principal>
         <secundario>
             <div>
                 <img src="../../assets/icons/star.png" alt="">
-                <p>
-                    <b>Favoritos</b>
-                </p>
+                <p><b>Favoritos</b></p>
             </div>
             <div>
                 <img src="../../assets/icons/extrato.png" alt="">
-                <p>
-                    <b>Extato</b>
-                </p>
+                <p><b>Extrato</b></p>
             </div>
             <div>
                 <img src="../../assets/icons/gear.png" alt="">
-                <p>
-                    <b>Ajustes</b>
-                </p>
+                <p><b>Ajustes</b></p>
             </div>
         </secundario>
     </main>
-
-    <!-- Script para abrir/fechar o menu ao clicar no ícone -->
-    <script>
-        document.querySelector('.user-icon').addEventListener('click', function() {
-            const menu = document.querySelector('.user-menu');
-            menu.classList.toggle('active');
-        });
-    </script>
+<script src="../scripts/script.js" defer></script>
 </body>
 </html>
