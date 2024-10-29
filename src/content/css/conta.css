@@ -13,21 +13,21 @@ body {
 }
 
 .logo-container {
-    margin-top: 20px;
+    margin-top: 20%;
 }
 
 .user-info {
     background-color: white;
     padding: 20px;
     margin: 20px 0;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .user-avatar {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 15px;
     margin-bottom: 10px;
 }
 
@@ -51,7 +51,7 @@ body {
     border: none;
     padding: 15px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
