@@ -1,11 +1,13 @@
-// Array de transações de exemplo
 const transacoes = [
-    { data: "01/10/2024", valor: "R$100,00", tipo: "Depósito", detalhes: "Depósito feito no caixa eletrônico." },
-    { data: "05/10/2024", valor: "R$50,00", tipo: "Compra", detalhes: "Compra realizada no supermercado." },
-    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Saque feito no caixa 24h." },
+    { data: "01/10/2024", valor: "R$70,00", tipo: "Depósito", detalhes: "Depósito feito no dia 4/11/24." },
+    { data: "05/10/2024", valor: "R$50,00", tipo: "Compra", detalhes: "Depósito feito no dia 9/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Depósito feito no dia 8/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Depósito feito no dia 7/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Depósito feito no dia 6/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Deposíto feito no dia 5/10/24." },
+
 ];
 
-// Função para carregar transações
 function carregarTransacoes() {
     const container = document.querySelector('.transaction-container');
 
@@ -27,11 +29,9 @@ function carregarTransacoes() {
     });
 }
 
-// Função para alternar a exibição dos detalhes
 function toggleDetalhes(index) {
     const detalhes = document.getElementById(`detalhes-${index}`);
     detalhes.classList.toggle('hidden');
 }
 
-// Carregar transações ao carregar a página
 window.onload = carregarTransacoes;
