@@ -1,10 +1,10 @@
 const transacoes = [
-    { data: "01/10/2024", valor: "R$70,00", tipo: "Depósito", detalhes: "Depósito feito no dia 4/11/24." },
-    { data: "05/10/2024", valor: "R$50,00", tipo: "Compra", detalhes: "Depósito feito no dia 9/10/24." },
-    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Depósito feito no dia 8/10/24." },
-    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Depósito feito no dia 7/10/24." },
-    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Depósito feito no dia 6/10/24." },
-    { data: "10/10/2024", valor: "R$30,00", tipo: "Saque", detalhes: "Deposíto feito no dia 5/10/24." },
+    { data: "01/10/2024", valor: "R$70,00", detalhes: "Depósito feito no dia 4/11/24." },
+    { data: "05/10/2024", valor: "R$50,00", detalhes: "Depósito feito no dia 9/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", detalhes: "Depósito feito no dia 8/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", detalhes: "Depósito feito no dia 7/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", detalhes: "Depósito feito no dia 6/10/24." },
+    { data: "10/10/2024", valor: "R$30,00", detalhes: "Deposíto feito no dia 5/10/24." },
 
 ];
 
@@ -17,7 +17,7 @@ function carregarTransacoes() {
 
         transacaoDiv.innerHTML = `
             <div class="transaction-summary">
-                <p>${transacao.data} - ${transacao.tipo} - ${transacao.valor}</p>
+                <p>${transacao.data} - ${transacao.valor}</p>
                 <button class="toggle-details" onclick="toggleDetalhes(${index})">Detalhes</button>
             </div>
             <div class="transaction-details hidden" id="detalhes-${index}">
