@@ -131,11 +131,13 @@ section rodape {
     height: 30%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-top: 10px;
 }
 
 section rodape p {
     font-family: Inter;
     padding-left: 2vw;
+
 }
 
 main{
