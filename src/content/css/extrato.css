@@ -1,4 +1,3 @@
-/* Estilos para a página Extrato com o estilo da CPTM */
 
 * {
     margin: 0;
@@ -26,26 +25,13 @@ header {
     display: flex;
     flex-direction: row;
     height: 70px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    width: 70px;
-}
+    width: 90px;
 
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.profile p {
-    color: white;
-    padding-right: 3vw;
-}
-
-.user-icon {
-    height: 25px;
 }
 
 nav {
