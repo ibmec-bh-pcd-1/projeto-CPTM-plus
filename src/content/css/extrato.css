@@ -30,7 +30,8 @@ header {
 }
 
 .logo {
-    width: 90px;
+    width: 100px;
+    margin-bottom: 50px ;
 
 }
 
@@ -48,6 +49,26 @@ nav {
     font-weight: bold;
     text-decoration: none;
 }
+
+.report-button {
+    background-color: #6b5f5c; 
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%; 
+    max-width: 300px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease;
+}
+
+.report-button:hover {
+    background-color: #EE3338; 
+}
+
 
 .nav-link.selected {
     background-color: white;
@@ -111,4 +132,15 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
