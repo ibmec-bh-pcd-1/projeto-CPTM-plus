@@ -17,11 +17,11 @@ function carregarTransacoes() {
 
         transacaoDiv.innerHTML = `
             <div class="transaction-summary">
-                <p>${transacao.data} - ${transacao.tipo} - ${transacao.valor}</p>
-                <button class="toggle-details" onclick="toggleDetalhes(${index})">Detalhes</button>
+                <p><b>${transacao.tipo} - ${transacao.valor}</b></p>
+                <button class="toggle-details" onclick="toggleDetalhes(${index})"><b>Detalhes</b></button>
             </div>
             <div class="transaction-details hidden" id="detalhes-${index}">
-                <p>${transacao.detalhes}</p>
+                <p><b>${transacao.data} - ${transacao.detalhes}</b></p>
             </div>
         `;
 

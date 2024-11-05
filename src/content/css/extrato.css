@@ -5,10 +5,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Inter;
+    src: url(../../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inter;
     background-color: white;
-    background-image: url(../../assets/img/background.png);
+    background-image: url(../../assets/img/background.svg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -56,7 +61,7 @@ nav {
     font-size: 16px;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     width: 100%; 
     max-width: 300px; 
@@ -82,9 +87,10 @@ main {
     max-width: 500px;
     background-color: white;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10%;
 }
 
 h2 {
@@ -118,7 +124,7 @@ h2 {
     background-color: #EE3338;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
     padding: 5px 10px;
     cursor: pointer;
     font-size: 14px;
@@ -144,3 +150,17 @@ footer {
     justify-content: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.btn-voltar {
+    background-color: #696462;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
