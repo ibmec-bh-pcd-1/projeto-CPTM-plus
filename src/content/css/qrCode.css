@@ -186,3 +186,62 @@ main secundario div {
     border-radius: 20px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
+
+/* ... O restante do seu código CSS original permanece o mesmo */
+
+/* Estilo para o botão "Gerar QR Code" */
+.qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#generate-qr-btn {
+    background-color: #D51217; /* Cor do botão */
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Distância entre o botão e o QR Code */
+}
+
+#generate-qr-btn:hover {
+    background-color: #a81012; /* Cor de hover */
+}
+
+/* Estilo para o QR Code */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.qr-code {
+    width: 200px; /* Tamanho do QR Code */
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.qr-info h3 {
+    color: #D51217;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.qr-info p {
+    color: #696462;
+    font-size: 16px;
+    margin-bottom: 15px;
+}

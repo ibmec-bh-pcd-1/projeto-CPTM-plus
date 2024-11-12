@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouvidoria</title>
+    <link rel="stylesheet" href="../css/ouvidoria.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../../assets/icons/cptmOuvidoria.svg" alt="Logo CPTM" class="logo">
+    </header>
+
+    <main>
+        <h3>Fale Conosco</h3>
+        <p>Descreva o problema ou deixe suas sugestões para melhorar nosso serviço.</p>
+        
+        <form id="ouvidoriaForm">
+            <label for="tipo">Tipo de Feedback:</label>
+            <select id="tipo" required>
+                <option value="">Selecione...</option>
+                <option value="problema">Problema</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+            </select>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" placeholder="Descreva o problema ou a sugestão..." required></textarea>
+            
+            <label for="anexo">Anexar Imagem (opcional):</label>
+            <input type="file" id="anexo" accept="image/*">
+            
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </main>
+    <button class="back-button" onclick="window.location.href='../html/home.html'"><b>Voltar</b></button>
+
+
+</body>
+</html>
