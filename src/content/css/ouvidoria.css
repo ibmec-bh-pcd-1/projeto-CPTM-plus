@@ -46,7 +46,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 5%;
 }
 
@@ -58,7 +58,7 @@ h3 {
 
 p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #666;
 }
 
@@ -69,15 +69,15 @@ form {
 }
 
 label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
 }
 
 select, textarea, input[type="file"] {
     width: 100%;
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 18px;
     border-radius: 15px;
     border: 1px solid #ddd;
 }
@@ -93,7 +93,7 @@ textarea {
     border: none;
     border-radius: 15px;
     padding: 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -177,6 +177,6 @@ textarea {
     padding: 10px;
     width: 90%;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
 }
