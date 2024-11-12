@@ -3,59 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recarga de Bilhetes</title>
+    <title>Página de Saldo</title>
     <link rel="stylesheet" href="../css/saldo.css">
 </head>
 <body>
-    <div class="container-recarga">
-        <!-- Header -->
-        <header class="header">
-            <img class="logo" src="../../assets/icons/cptmplus.svg" alt="Logo CPTM">
-        </header>
-
-        <!-- Seção de escolha de bilhetes -->
-        <div class="bilhete-section">
-            <h2>Escolha a quantidade de bilhetes</h2>
-            <select id="bilhete-quantidade" onchange="calcularTotal()">
-                <option value="1">1 bilhete</option>
-                <option value="2">2 bilhetes</option>
-                <option value="3">3 bilhetes</option>
-                <option value="4">4 bilhetes</option>
-                <option value="5">5 bilhetes</option>
-            </select>
-            <p><strong>Preço por bilhete:</strong> R$5,50</p>
-            <p><strong>Total:</strong> <span id="total">R$5,50</span></p>
+    <div class="container-saldo">
+        <div class="logo-container">
+            <img class="logocptm" src="../../assets/icons/cptmRecarregar.svg" alt="Logo CPTM">
         </div>
 
-        <!-- Seção de pagamento -->
-        <div class="pagamento-section">
-            <h2>Escolha o método de pagamento</h2>
-            <button class="btn-pagamento" onclick="toggleCartaoForm()">Cartão</button>
-            <button class="btn-pagamento" onclick="toggleQRCode()">PIX</button>
+        <div class="saldo-section">
+            <p><b>Seu saldo:</b></p>
+            <h1><b>R$20,00</b></h1>
         </div>
 
-        <!-- Formulário de pagamento com cartão -->
-        <div id="cartao-form" class="cartao-form">
-            <h3>Dados do Cartão</h3>
-            <input type="text" placeholder="Número do Cartão">
-            <input type="text" placeholder="Nome no Cartão">
-            <input type="text" placeholder="Data de Validade">
-            <input type="text" placeholder="CVV">
-            <button class="btn-confirmar">Confirmar Pagamento</button>
+        <div class="pix-section">
+            <div class="pix-container">
+                <img src="../../assets/icons/pix.svg" alt="">
+                
+                <span><b>Valor mínimo: R$10,00</b></span>
+                <span><b>Valor máximo: R$650,00</b></span>
+            </div>
         </div>
 
-        <!-- Seção para exibir o QR code -->
-        <div id="qr-code" class="qr-code">
-            <h3>Escaneie o QR Code para pagamento via PIX</h3>
-            <img src="../../assets/img/qrcode-preto.png" alt="QR Code">
-        </div>
+        <!-- Botão de cadastrar novo cartão -->
+        <button class="btn-cadastrar-cartao"><b>Cadastrar novo cartão</b></button>
+
+        <button class="btn-voltar" onclick="window.location.href='../html/home.html'"><b>Voltar</b></button>
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <button class="back-button" onclick="goToHome()">Voltar para Home</button>
-    </footer>
-
-    <script src="../scripts/saldo.js"></script>
 </body>
 </html>

@@ -10,48 +10,44 @@
 <body>
     <div class="header">
         <img src="../../assets/icons/cptmplus.svg" alt="CPTM Logo" class="logo">
+        <h1>Consultar Status das Linhas</h1>
     </div>
-    
     <div class="status-container">
-        <div class="line-status" data-status="Operando Normalmente" onclick="mostrarProblema(this)">
+        <div class="line-status">
             <div class="line-info">
                 <div class="line-name" style="border-color: purple;">Linha 1 - Lilás</div>
-                <div class="line-status-text">Operando Normalmente <span class="icon">&#10004;</span></div>
+                <div class="line-status-text">Operando Normalmente</div>
             </div>
         </div>
-
-        <div class="line-status" data-status="Operando Normalmente" onclick="mostrarProblema(this)">
+        
+        <div class="line-status">
             <div class="line-info">
                 <div class="line-name" style="border-color: green;">Linha 2 - Verde</div>
-                <div class="line-status-text">Operando Normalmente <span class="icon">&#10004;</span></div>
+                <div class="line-status-text">Operando Normalmente</div>
             </div>
         </div>
-
-        <div class="line-status" data-status="Operando Normalmente" onclick="mostrarProblema(this)">
+        
+        <div class="line-status">
             <div class="line-info">
                 <div class="line-name" style="border-color: red;">Linha 3 - Vermelha</div>
-                <div class="line-status-text">Operando Normalmente <span class="icon">&#10004;</span></div>
+                <div class="line-status-text">Operando Normalmente</div>
             </div>
         </div>
-
-        <div class="line-status" data-status="Operando Normalmente" onclick="mostrarProblema(this)">
+        
+        <div class="line-status">
             <div class="line-info">
                 <div class="line-name" style="border-color: yellow;">Linha 4 - Amarela</div>
-                <div class="line-status-text">Operando Normalmente <span class="icon">&#10004;</span></div>
+                <div class="line-status-text">Operando Normalmente</div>
             </div>
         </div>
-
-        <div class="line-status" data-status="Problemas Identificados" onclick="mostrarProblema(this)">
+        
+        <div class="line-status">
             <div class="line-info">
                 <div class="line-name" style="border-color: blue;">Linha 5 - Azul</div>
-                <div class="line-status-text alert">Problemas Identificados <span class="icon">&#9888;</span></div>
-                <div class="problem-description hidden">Atraso devido a manutenção na via. Previsão de normalização: 30 min</div>
+                <div class="line-status-text alert">Problemas Identificados</div>
+                <div class="problem-description">Atraso devido a manutenção na via. Previsão de normalização: 30 min</div>
             </div>
         </div>
     </div>
-    
-    <footer>
-        <button class="btn-voltar" onclick="window.location.href='home.html'"><b>Voltar</b></button>
-    </footer>
 </body>
 </html>
