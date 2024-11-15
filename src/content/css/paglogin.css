@@ -18,7 +18,7 @@ body {
 }
 
 .vermelha {
-    background-color: #EE3338;
+    background-color: #D51217;
     display: flex;
     width: 100%;
     height: 60vh;
@@ -41,7 +41,7 @@ body {
     max-width: 400px;
     background-color: rgba(242, 240, 245, 0.9);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     z-index: 1; 
     height: 40%;
@@ -94,14 +94,14 @@ input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 button {
     padding: 10px 20px;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
@@ -109,5 +109,5 @@ button {
 }
 
 button:hover {
-    background-color: #cc292e;
+    background-color: #D51217;
 }
