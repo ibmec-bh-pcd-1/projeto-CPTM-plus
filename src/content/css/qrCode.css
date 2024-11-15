@@ -60,11 +60,12 @@ header p {
 
 nav{
     padding-top: 2vh;
-    padding-left: 3vh;
     padding-bottom: 2vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 nav .selected{
